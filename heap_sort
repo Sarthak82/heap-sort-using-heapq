@@ -1,0 +1,16 @@
+from heapq import heappush,heappop
+
+def heap_sort(lisst):
+    heap=[]
+    for i in list:
+        # i is appended intp heap
+        heappush(heap,i)
+        
+    sorted_list=[]
+    while heap:
+        sorted_list.append(heappop(heap))
+        
+    return sorted_list
+    
+list=[9,3,7,55,6,44,2,3,4,6,5]
+print(heap_sort(list))
